@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Generative Bauhaus Grid Patterns - CSS Houdini ✨</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="worklet-canvas"></div>
+
+<script>
+  CSS.paintWorklet.addModule('https://codepen.io/georgedoescode/pen/qBXYama.js');
+  document.documentElement.style.setProperty('--pattern-seed', Math.random() * 10000);
+</script>
+<!-- partial -->
+  <script type="module" src="./script.js"></script>
+
+</body>
+</html>
